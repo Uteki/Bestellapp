@@ -1,0 +1,16 @@
+header {
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+}
+
+header * {
+    padding: 10px;
+}
+
+menu div {
+    width: 15px;
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+}
