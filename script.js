@@ -1,3 +1,5 @@
+let off = false;
+
 function init() {
     renderItems(orderMenu.mainDishes, "mainDishes", 1);
     renderItems(orderMenu.sideDishes, "sideDishes", 2);
@@ -12,13 +14,14 @@ function renderItems(course, id, category) {
 
 function renderBasket() {
     //TODO: basketTemplate
-    totalSum()
+
+    totalSum("basket-total");
+    totalSum("basket-transport");
 }
 
-function totalSum() {
+function totalSum(id) {
     let priceTotal = 0;
-    let basketNr = document.getElementById("basket-total");
-    basketNr.innerHTML = "";
+    let deliveryPrice = off === true ? 0 : 5;
 
     Object.keys(orderBasket).forEach((key) => {
         orderBasket[key].forEach((item) => {
@@ -26,7 +29,13 @@ function totalSum() {
         });
     })
 
-    basketNr.innerHTML = priceTotal;
+    document.getElementById(id).innerHTML = (id === "basket-transport") ? priceTotal + deliveryPrice : priceTotal;
+}
+
+function deliveryOff() {
+    off = !off;
+
+    renderBasket();
 }
 
 function clickIt(item, price, category) {
@@ -40,5 +49,5 @@ function clickIt(item, price, category) {
         order.push({item, price, amount: 1});
     }
 
-    renderBasket();
+    renderBasket(); //TODO: use item price for template also add button to add amount or remove
 }
