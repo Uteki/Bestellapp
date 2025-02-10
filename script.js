@@ -11,6 +11,7 @@ function renderItems(course, id, category) {
 }
 
 function renderBasket() {
+    //TODO: basketTemplate
     totalSum()
 }
 
