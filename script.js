@@ -29,21 +29,14 @@ function totalSum() {
 }
 
 function clickIt(item, price, category) {
-    let test = orderBasket[Object.keys(orderBasket)[category]];
-    let booTest = false;
+    let order = orderBasket[Object.keys(orderBasket)[category]];
+    let finder = order.find(element => element.item === item);
 
-    for (let i = 0; i < test.length; i++) {
-        if (test[i].item === item) {
-            test[i].price += price;
-            test[i].amount++;
-            renderBasket();
-            return
-        }
-        booTest = true;
-    }
-
-    if (booTest === true || test.length === 0) {
-        orderBasket[Object.keys(orderMenu)[category]].push({item, price, amount: 1});
+    if (finder) {
+        finder.price += price;
+        finder.amount++;
+    } else {
+        order.push({item, price, amount: 1});
     }
 
     renderBasket();
