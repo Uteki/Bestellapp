@@ -1,3 +1,9 @@
+let orderBasket = {
+    "mainDishes": [],
+    "sideDishes": [],
+    "drinks": []
+};
+
 let orderMenu = {
     "mainDishes": [
         {
