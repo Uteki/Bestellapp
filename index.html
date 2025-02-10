@@ -10,9 +10,10 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 
     <script src="./scripts/data.js"></script>
+    <script src="./scripts/template.js"></script>
     <script src="./script.js"></script>
 </head>
-<body>
+<body onload="init()">
     <header>
         <span>Bestellapp</span>
         <menu>
@@ -37,19 +38,19 @@
                 <img>
                 <h2>Hauptgerichte</h2>
             </div>
-            <output></output>
+            <output id="mainDishes"></output>
 
             <div>
                 <img>
                 <h2>Beilagen</h2>
             </div>
-            <output></output>
+            <output id="sideDishes"></output>
 
             <div>
                 <img>
                 <h2>Getränke</h2>
             </div>
-            <output></output>
+            <output id="drinks"></output>
         </section>
 
         <section id="basket">
