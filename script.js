@@ -34,7 +34,7 @@ function totalSum(id) {
 
 function deliveryOff() {
     off = !off;
-
+    document.getElementById("deliver-line").classList.toggle("d_none");
     renderBasket();
 }
 
@@ -51,3 +51,5 @@ function clickIt(item, price, category) {
 
     renderBasket(); //TODO: use item price for template also add button to add amount or remove
 }
+
+//TODO: local storage basket
