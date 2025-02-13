@@ -7,10 +7,13 @@ function itemTemplate(item, description, price, category) {
     </div> <br>`;
 }
 
-function basketTemplate(a, b, c) {
-    return `<div>
-    ${a}<br>
-    ${b}<br>
-    ${c}<br>
+function basketTemplate(item, amount, price) {
+    return `<div style="display: block">
+    <span>${item}</span><br><br>
+    <div onclick="plusMinus('${item}', '-')" style="position: unset" class="plus&minus theme-color">-</div>
+    ${amount}
+    <div onclick="plusMinus('${item}', '+')" style="position: unset" class="plus&minus theme-color">+</div>
+    <br>
+    ${price} €<button onclick="removeAll('${item}')">Trash</button><br>
     </div>`;
 }
