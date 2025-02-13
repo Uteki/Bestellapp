@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bestellapp</title>
 
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./style.css">
 
     <script src="./scripts/data.js"></script>
@@ -15,64 +16,68 @@
 </head>
 <body onload="init()">
     <header>
-        <span>Bestellapp</span>
+        <img src="./assets/img/bestellapp-logo.png" alt="Bestellapp" id="bestellapp">
         <menu>
             <div>III</div>
         </menu>
     </header>
 
     <main>
-        <section id="content">
-            <img>
-            <h1>Bamboo Lounge</h1>
-            <img>
-            <p>Bewertung ⭐⭐⭐⭐☆</p>
+        <div>
+            <section id="content">
+                <img src="assets/img/bamboo-lounge.jpg" alt="Bamboo Lounge" id="hero">
+                <img src="assets/img/bamboo-logo.jpg" alt="bamboo logo" id="logo" >
+                <h1 class="margin_10">Bamboo Lounge</h1>
+                <p class="margin_10 theme-color">Bewertung ⭐⭐⭐⭐ Sterne</p>
 
-            <nav>
-                <a>Hauptgerichte</a>
-                <a>Beilagen</a>
-                <a>Getränke</a>
-            </nav>
+                <nav>
+                    <div class="margin_10">
+                        <div class="arrow right"></div>
+                        <a href="#main-dish">Hauptgerichte</a>
+                        <a href="#side-dish">Beilagen</a>
+                        <a href="#drinks">Getränke</a>
+                    </div>
+                </nav>
 
-            <div>
-                <img>
-                <h2>Hauptgerichte</h2>
-            </div>
-            <output id="mainDishes"></output>
+                <div class="course margin_10">
+                    <img src="assets/img/bamboo-main-dish.jpg" alt="Bamboo Dish" id="main-dish">
+                    <h2 class="margin_10">Hauptgerichte</h2>
+                </div>
+                <output id="mainDishes"></output>
 
-            <div>
-                <img>
-                <h2>Beilagen</h2>
-            </div>
-            <output id="sideDishes"></output>
+                <div class="course margin_10">
+                    <img src="assets/img/bamboo-side-dish.jpg" alt="Bamboo Side Dish" id="side-dish">
+                    <h2 class="margin_10">Beilagen</h2>
+                </div>
+                <output id="sideDishes"></output>
 
-            <div>
-                <img>
-                <h2>Getränke</h2>
-            </div>
-            <output id="drinks"></output>
-        </section>
+                <div class="course margin_10">
+                    <img src="assets/img/bamboo-drink.jpg" alt="Bamboo Drink" id="drink">
+                    <h2 class="margin_10">Getränke</h2>
+                </div>
+                <output id="drinks"></output>
+            </section>
 
-        <section id="basket">
-            <h1>Warenkorb</h1>
-            <button onclick="deliveryOff()">transport off</button>
-            <div class="line-separator">-----</div>
-            <div id="basket-content">test</div>
-            <div class="line-separator">-----</div>
-            <span>Zwischensumme </span><output id="basket-total">0</output><span> €</span><br>
-            <span id="deliver-line">Lieferkosten 5 €</span><br>
-            <span>Gesamt </span><output id="basket-transport">0</output><span> €</span><br>
-        </section>
+            <section id="basket">
+                <h1>Warenkorb</h1>
+                <button onclick="deliveryOff()">transport off</button>
+                <div class="line-separator">-----</div>
+                <div id="basket-content">test</div>
+                <div class="line-separator">-----</div>
+                <span>Zwischensumme </span><output id="basket-total">0</output><span> €</span><br>
+                <span id="deliver-line">Lieferkosten 5 €</span><br>
+                <span>Gesamt </span><output id="basket-transport">0</output><span> €</span><br>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <img>
-        <p>Follow us</p>
+        <p>Folge uns</p>
         <div>
-            <a>Facebook</a>
-            <a>Instagram</a>
-            <a>X</a>
-            <a>Youtube</a>
+            <a href="https://tiktok.com"><img src="assets/icons/tiktok.png" alt="tiktok"></a>
+            <a href="https://youtube.de"><img src="assets/icons/youtube.png" alt="youtube"></a>
+            <a href="https://facebook.de"><img src="assets/icons/facebook.png" alt="facebook"></a>
+            <a href="https://instagram.com"><img src="assets/icons/instagram.png" alt="instagram"></a>
         </div>
         <p>© 2025 Bestellapp.de</p>
     </footer>

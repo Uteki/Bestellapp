@@ -1,5 +1,83 @@
+main div {
+    display: flex;
+}
 
+nav {
+    margin: 10px 0;
+    padding: 10px 0;
+    background: rgba(230, 221, 218, 0.51);
+
+    & div > * {
+        margin-right: 10px;
+        color: unset;
+    }
+
+    & div > *:hover {
+        color: #ffb155;
+    }
+}
+
+#hero {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    top: 135px;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    align-self: center;
+    position: absolute;
+    border-radius: 100%;
+}
+
+#content {
+    flex: 5 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        padding: 5px 0;
+    }
+
+    & p {
+        padding: 5px 0;
+    }
+}
+
+.course {
+    flex-direction: column;
+
+    & img {
+        height: 75px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    & h2 {
+        margin-bottom: 15px;
+    }
+}
 
 .d_none {
     display: none;
+}
+
+.margin_10 {
+    margin: 0 10px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow {
+    border: solid #ffb155;
+    border-width: 0 9px 9px 0;
+    padding: 4px;
+    border-radius: 100%;
 }

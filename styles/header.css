@@ -1,16 +1,30 @@
 header {
-    background-color: khaki;
+    z-index: 1;
+    height: 50px;
     display: flex;
+    position: relative;
+    background-color: #ffb155;
     justify-content: space-between;
+
+    & * {
+        padding: 10px;
+    }
 }
 
-header * {
-    padding: 10px;
+menu {
+    margin-right: 10px;
+
+    & div {
+        transform: rotate(90deg);
+        font-size: 20px;
+        color: white;
+        width: 15px;
+        padding: 0;
+        margin: 0;
+    }
 }
 
-menu div {
-    width: 15px;
-    transform: rotate(90deg);
-    padding: 0;
-    margin: 0;
+#bestellapp {
+    height: auto;
+    width: max-content;
 }
