@@ -48,6 +48,18 @@ nav {
     }
 }
 
+#order-received {
+    background-color: #ff980023;
+    height: 250px;
+    font-size: 4rem;
+    width: 55.7%;
+    position: fixed;
+    top: 35%;
+    left: 22.5%;
+    align-items: center;
+    justify-content: center;
+}
+
 .course {
     flex-direction: column;
 
@@ -62,14 +74,6 @@ nav {
     }
 }
 
-.d_none {
-    display: none;
-}
-
-.margin_10 {
-    margin: 0 10px;
-}
-
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -80,4 +84,11 @@ nav {
     border-width: 0 9px 9px 0;
     padding: 4px;
     border-radius: 100%;
+}
+
+.line-separator {
+    margin: 10px 0;
+    height: 0;
+    width: 100%;
+    border: 1px solid #f2eeec;
 }

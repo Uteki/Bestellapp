@@ -59,15 +59,41 @@
             </section>
 
             <section id="basket">
-                <h1>Warenkorb</h1>
-                <button onclick="deliveryOff()">transport off</button>
-                <div class="line-separator">-----</div>
-                <div id="basket-content"></div>
-                <div class="line-separator">-----</div>
-                <span>Zwischensumme </span><output id="basket-total">0</output><span> €</span><br>
-                <span id="deliver-line">Lieferkosten 5 €</span><br>
-                <span>Gesamt </span><output id="basket-transport">0</output><span> €</span><br>
+                <div id="basket-container">
+                    <h1>Warenkorb</h1>
+
+                    <div id="delivery-toggle">
+                        <label class="switch">
+                            <input onclick="deliveryOff()" type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <p>auch zum Abholen verfügbar!</p>
+                    </div>
+
+                    <div class="line-separator"></div>
+                    <div id="basket-content"></div>
+                    <div class="line-separator"></div>
+
+                    <div class="sum-wrapper">
+                        <span>Zwischensumme </span>
+                        <div><output id="basket-total">0</output><div>&nbsp;</div><span>€</span></div>
+                    </div>
+                    <div id="deliver-line" class="sum-wrapper">
+                        <span>Lieferkosten</span>
+                        <div>5&nbsp;€</div>
+                    </div>
+                    <div class="sum-wrapper">
+                        <span>Gesamt </span>
+                        <div><output id="basket-transport">0</output><div>&nbsp;</div><span>€</span></div>
+                    </div>
+
+                    <button onclick="sendOrder()">Jetzt Bestellen.</button>
+                </div>
             </section>
+        </div>
+
+        <div id="order-received" class="d_none">
+            Bestellung angenommen.
         </div>
     </main>
 

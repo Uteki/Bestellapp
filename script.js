@@ -30,10 +30,9 @@ function renderBasket() {
 }
 
 function totalSum(id, shoppingCart) {
-    shoppingCart.innerHTML = "";
-
     let priceTotal = 0;
     let deliveryPrice = off === true ? 0 : 5;
+    shoppingCart.innerHTML = "";
 
     Object.keys(orderBasket).forEach((key) => {
         orderBasket[key].forEach((item) => {
@@ -96,4 +95,25 @@ function setStorage() {
 
 function getStorage() {
     return JSON.parse(localStorage.getItem('basket-content'));
+}
+
+function sendOrder() {
+    if (Object.values(orderBasket).flat().length <= 0) {
+        return
+    }
+
+    orderBasket.mainDishes = [];
+    orderBasket.sideDishes = [];
+    orderBasket.drinks = [];
+
+    receiveOrder();
+    renderBasket();
+}
+
+function receiveOrder() {
+    document.getElementById("order-received").classList.toggle("d_none");
+
+    setTimeout( () => {
+        document.getElementById("order-received").classList.toggle("d_none");
+    }, 3000);
 }
