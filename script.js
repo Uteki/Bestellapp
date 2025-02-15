@@ -117,3 +117,11 @@ function receiveOrder() {
         document.getElementById("order-received").classList.toggle("d_none");
     }, 3000);
 }
+
+function menuResponse() {
+    if (window.matchMedia("(max-width: 660px)").matches) {
+        document.body.classList.toggle("d_scroll");
+    }
+
+    document.getElementById("basket").classList.toggle("d_unset");
+}

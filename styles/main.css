@@ -1,3 +1,8 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
 main div {
     display: flex;
 }
@@ -15,6 +20,11 @@ nav {
     & div > *:hover {
         color: #ffb155;
     }
+}
+
+#main-wrapper {
+    width: 100%;
+    max-width: 1920px;
 }
 
 #hero {

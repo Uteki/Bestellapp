@@ -3,6 +3,7 @@ header {
     height: 50px;
     display: flex;
     position: relative;
+    align-items: center;
     background-color: #ffb155;
     justify-content: space-between;
 
@@ -12,19 +13,28 @@ header {
 }
 
 menu {
+    display: flex;
+    color: #ffffff;
     margin-right: 10px;
 
     & div {
-        transform: rotate(90deg);
-        font-size: 20px;
-        color: white;
-        width: 15px;
-        padding: 0;
-        margin: 0;
+        &:nth-child(1) {
+            transform: rotate(90deg);
+            cursor: pointer;
+            font-size: 20px;
+            display: none;
+            width: 15px;
+            padding: 0;
+            margin: 0;
+        }
+
+        &:nth-child(2) {
+            font-weight: 600;
+        }
     }
 }
 
 #bestellapp {
-    height: auto;
+    height: 100%;
     width: max-content;
 }
