@@ -17,6 +17,7 @@
 <body onload="init()">
     <header>
         <img src="./assets/img/bestellapp-logo.png" alt="Bestellapp" id="bestellapp">
+
         <menu>
             <div onclick="menuResponse()">III</div>
             <div>[===]-'</div>
@@ -56,13 +57,13 @@
                     <img src="assets/img/bamboo-drink.jpg" alt="Bamboo Drink" id="drink">
                     <h2 class="margin_10">Getränke</h2>
                 </div>
+
                 <output id="drinks"></output>
             </section>
 
             <section id="basket">
                 <div id="basket-container">
                     <h1>Warenkorb</h1>
-
                     <div id="delivery-toggle">
                         <label class="switch">
                             <input onclick="deliveryOff()" type="checkbox" checked>
@@ -79,10 +80,12 @@
                         <span>Zwischensumme </span>
                         <div><output id="basket-total">0</output><div>&nbsp;</div><span>€</span></div>
                     </div>
+
                     <div id="deliver-line" class="sum-wrapper">
                         <span>Lieferkosten</span>
                         <div>5&nbsp;€</div>
                     </div>
+
                     <div class="sum-wrapper">
                         <span>Gesamt </span>
                         <div><output id="basket-transport">0</output><div>&nbsp;</div><span>€</span></div>
@@ -100,12 +103,14 @@
 
     <footer>
         <p>Folge uns</p>
+
         <div>
             <a href="https://tiktok.com"><img src="assets/icons/tiktok.png" alt="tiktok"></a>
             <a href="https://youtube.de"><img src="assets/icons/youtube.png" alt="youtube"></a>
             <a href="https://facebook.de"><img src="assets/icons/facebook.png" alt="facebook"></a>
             <a href="https://instagram.com"><img src="assets/icons/instagram.png" alt="instagram"></a>
         </div>
+
         <p>© 2025 Bestellapp.de</p>
     </footer>
 </body>
