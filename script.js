@@ -1,7 +1,7 @@
 let off = false;
 
 function init() {
-    orderBasket = getStorage();
+    orderBasket = getStorage() == null ? orderBasket : getStorage();
 
     renderItems(orderMenu.mainDishes, "mainDishes", 1);
     renderItems(orderMenu.sideDishes, "sideDishes", 2);
