@@ -110,10 +110,17 @@ body::-webkit-scrollbar-thumb:hover {
     border: none;
     color: orange;
     cursor: pointer;
-    padding: 2.5px 5px 0px 5px;
+    padding: 2.5px 5px 0 5px;
     box-shadow: 2px 2px 2px orange;
 
     &:hover {
         background-color: rgba(255, 155, 0, 0.355);
     }
+}
+
+.order-now:hover {
+    color: rgb(255, 155, 0);
+    border-color: rgb(255, 155, 0);
+    text-shadow: 1px 1px 1px #cccccc;
+    background-color: rgba(255, 155, 0, 0.355) !important;
 }

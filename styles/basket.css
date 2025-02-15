@@ -58,6 +58,10 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.23);
+
+        &:nth-child(1) {
+            padding-bottom: 2px;
+        }
     }
 }
 
