@@ -1,8 +1,7 @@
 #basket {
-    padding: 20px;
-
     top: 0;
     flex: auto;
+    padding: 20px;
     height: 100dvh;
     position: sticky;
     box-shadow: rgba(0, 0, 0, 0.25) 0 5px 15px;
@@ -13,9 +12,9 @@
 }
 
 #basket-container {
+    overflow: auto;
     flex-direction: column;
     max-height: calc(100vh - 150px);
-    overflow: auto;
 
     &::-webkit-scrollbar {
         width: 20px;
@@ -47,6 +46,7 @@
     margin: 5px 0;
     align-items: center;
     justify-content: space-between;
+
     & p {
         text-shadow: 1px 1px 2px #ffb155;
         color: #cccccc;
@@ -56,6 +56,7 @@
 .plus-minus {
     font-size: 25px;
     cursor: pointer;
+
     &:hover {
         transform: scale(1.23);
 
@@ -75,6 +76,7 @@
     flex-direction: row !important;
     justify-content: space-between;
     margin-bottom: 5px;
+
     & div {
         flex-direction: row !important;
     }

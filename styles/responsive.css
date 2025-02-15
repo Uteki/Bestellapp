@@ -28,6 +28,7 @@
     header {
         position: fixed !important;
         width: 100%;
+
         & menu {
             div {
                 display: none;
@@ -44,10 +45,10 @@
     }
 
     #basket {
-        display: none;
         position: fixed !important ;
         top: 50px !important ;
         background: #ffffff;
+        display: none;
         width: 100%;
         z-index: 1;
     }
@@ -83,6 +84,7 @@
     #delivery-toggle {
         flex-direction: column;
         align-items: flex-start !important;
+
         & p {
           margin-top: 5px;
         }

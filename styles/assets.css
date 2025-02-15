@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .dish-button:hover {
     background-color: #8f9d7eab;
+
     & :nth-child(6) {
         color: #f3f3f3;
     }
@@ -62,40 +63,40 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .switch {
-    position: relative;
-    display: inline-block;
     width: 60px;
     height: 34px;
+    position: relative;
+    display: inline-block;
 }
 
 .switch input {
-    opacity: 0;
     width: 0;
     height: 0;
+    opacity: 0;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    transition: .4s;
+    cursor: pointer;
+    position: absolute;
     background-color: #ccc;
     -webkit-transition: .4s;
-    transition: .4s;
 }
 
 .slider:before {
-    position: absolute;
+    left: 4px;
+    width: 26px;
+    bottom: 4px;
     content: "";
     height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    transition: .4s;
+    position: absolute;
     background-color: white;
     -webkit-transition: .4s;
-    transition: .4s;
 }
 
 .slider.round {
